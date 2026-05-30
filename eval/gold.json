@@ -1,0 +1,18 @@
+{
+  "description": "Hand-labeled gold standard for relationship extraction. Each entry is one article keyed by URL. People are canonical names; edges are directed (source, rel_type, target). rel_type is matched after normalization, and we also score a looser 'typed-agnostic' variant (see evaluate.py). Extend this set as more articles are reviewed.",
+  "articles": {
+    "https://techcrunch.com/2026/02/27/musk-bashes-openai-in-deposition-saying-nobody-committed-suicide-because-of-grok/": {
+      "people": ["Elon Musk", "Sam Altman", "Sarah Perez", "Larry Page"],
+      "edges": [
+        {"source": "Elon Musk", "rel_type": "sues", "target": "Sam Altman"},
+        {"source": "Sarah Perez", "rel_type": "reports_on", "target": "Elon Musk"}
+      ]
+    },
+    "https://techcrunch.com/2026/02/28/openais-sam-altman-announces-pentagon-deal-with-technical-safeguards/": {
+      "people": ["Sam Altman", "Anthony Ha"],
+      "edges": [
+        {"source": "Anthony Ha", "rel_type": "reports_on", "target": "Sam Altman"}
+      ]
+    }
+  }
+}

@@ -1,0 +1,29 @@
+# --- Secrets ---
+.env
+
+# --- Generated data ---
+newskg.db
+*.db
+
+# --- Python caches / build artifacts ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+build/
+dist/
+
+# --- Virtual environments ---
+.venv/
+venv/
+env/
+# stray venvs that ended up in this project folder
+&&/
+source/
+pytest-cache-files-*/
+
+# --- IDE / editor ---
+.idea/
+.vscode/
+*.swp
+.DS_Store
